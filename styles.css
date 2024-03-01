@@ -1,0 +1,112 @@
+
+#heading {
+    background-color: #2a3c30;
+    font-family: Luminari;
+
+}
+
+#ml {
+    margin-left: 0%;
+    padding-left: 0%;
+}
+
+#mr {
+    margin-right: 0%;
+    padding-right: 0%;
+}
+
+#img {
+    width: 90%;
+}
+
+#title {
+    font-family: Luminari;
+}
+
+#subtitle {
+   font-family: Palatino;
+}
+
+#txt {
+    font-family: Palatino;
+ }
+
+#lnk {
+    color: #2a3c30;
+    background-color: #f0ebe7;
+    font-family: Palatino;
+}
+#ln {
+    color: #2a3c30;
+    background-color: #f0ebe7;
+    
+}
+
+#nav {
+    color: #f0ebe7;
+    background-color: #647471;
+    font-family: Luminari;
+}
+#nava {
+    background-color: #f0ebe7;
+    color: #647471;
+    font-family: Luminari;
+}
+
+#btn {
+    color: #f0ebe7;
+    background-color: #2a3c30;
+    font-family: Palatino;
+}
+
+#blurb {
+    color: #f0ebe7;
+    background-color: #647471;
+}
+
+#blurt {
+    color: #f0ebe7;
+    background-color: #3B5444;
+   
+}
+
+#textlight{
+    color: #647471;
+}
+#highlights {
+    color: #f0ebe7;
+    background-color: #414649;
+}
+
+#items {
+    text-align: center;
+    color: #f0ebe7;
+    background-color: #414649;
+}
+
+#contact {
+    background-color: #f0ebe7;
+}
+
+#card {
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+#csLand {
+    background-color: #2a3c30;
+    text-align: center;
+    color: #f0ebe7;
+
+}
+
+#CSbutton {
+    background-color: #414649;
+    text-align: center;
+    color: #f0ebe7;
+}
+
+#navbar {
+    color: #f0ebe7;
+    background-color: #414649;
+}
