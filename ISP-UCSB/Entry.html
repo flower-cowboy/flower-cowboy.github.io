@@ -1,0 +1,151 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Include Leaflet CSS and JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Include Bootstrap JavaScript and Popper.js (required for Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+
+        /* Define the style for the map container */
+        #map {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* To place the map behind other elements */
+        }
+        
+        .city-buttons {
+            background-color: rgba(2, 48, 32, 0.0); /* Transparent white background */
+            padding: 30px;
+            text-align: center;
+            
+        }
+        .title{
+            background-color: rgba(9, 121, 105, 0.9); /* Transparent white background */
+            padding: 30px;
+            text-align: center;
+        }
+        .text{
+            font-family: Georgia, serif;
+            color: rgba(225,225,225);
+        }
+        /* Style for city buttons */
+        .city-button {
+            display: block;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background-color: rgba(9, 121, 105);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        /* Style for city button hover effect */
+        .city-button:hover {
+            background-color: rgba(175, 225, 175);
+            color: rgba(9, 121, 105);
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+    </style>
+</head>
+<body>
+    <!-- Leaflet Map Container -->
+    <div id="map"></div>
+    
+    <div class="container-fluid mt-0 mb-0 title text">
+        <h1>Visualizing Disparities in Broadband Plans Offered by Major US ISPs</h1>
+        <h4>Select a City from the list below</h4>
+    </div>
+    <!-- Transparent square with buttons -->
+    <div class="container-fluid mt-0 mb-0 city-buttons">
+    <div class="container text">
+
+        <div class="row mt-1">
+            <div class="col-md-4">
+                <a href="HTMLs/Albuquerque.html" class="btn city-button mb-3">Albuquerque, NM</a>
+                <a href="HTMLs/Atlanta.html" class="btn city-button mb-3">Atlanta, GA</a>
+                <a href="HTMLs/Austin.html" class="btn city-button">Austin, TX</a>
+            </div>
+            <div class="col-md-4">
+                <a href="HTMLs/Durham.html" class="btn city-button mb-3">Durham, NC</a>
+                <a href="HTMLs/Fargo.html" class="btn city-button mb-3">Fargo, ND</a>
+                <a href="HTMLs/FortWayne.html" class="btn city-button">Fort Wayne, IN</a>
+            </div>
+            <div class="col-md-4">
+                <a href="HTMLs/Oakland.html" class="btn city-button mb-3">Oakland, CA</a>
+                <a href="HTMLs/Oklahoma.html" class="btn city-button mb-3">Oklahoma, OK</a>
+                <a href="HTMLs/Omaha.html" class="btn city-button">Omaha, NE</a>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="HTMLs/Billings.html" class="btn city-button mb-3">Billings, MT</a>
+                <a href="HTMLs/Birmingham.html" class="btn city-button mb-3">Birmingham, AL</a>
+                <a href="HTMLs/Charlotte.html" class="btn city-button">Charlotte, NC</a>
+            </div>
+            <div class="col-md-4">
+                <a href="HTMLs/Kansas.html" class="btn city-button mb-3">Kansas, MO</a>
+                <a href="HTMLs/LasVegas.html" class="btn city-button mb-3">Las Vegas, NV</a>
+                <a href="HTMLs/LAcounty.html" class="btn city-button">Los Angeles, CA</a>
+            </div>
+            <div class="col-md-4">
+                <a href="HTMLs/Phoenix.html" class="btn city-button mb-3">Phoenix, AZ</a>
+                <a href="HTMLs/SantaBarbara.html" class="btn city-button mb-3">Santa Barbara, CA</a>
+                <a href="HTMLs/Seattle.html" class="btn city-button">Seattle, WA</a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="HTMLs/Chicago.html" class="btn city-button mb-3">Chicago, IL</a>
+                <a href="HTMLs/Cleveland.html" class="btn city-button mb-3">Cleveland, OH</a>
+                <a href="HTMLs/Columbus.html" class="btn city-button">Columbus, OH</a>
+            </div>
+            <div class="col-md-4">
+                <a href="HTMLs/Louisville.html" class="btn city-button mb-3">Louisville, KY</a>
+                <a href="HTMLs/Milwaukee.html" class="btn city-button mb-3">Milwaukee, WI</a>
+                <a href="HTMLs/New_Orleans.html" class="btn city-button">New Orleans, LA</a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="HTMLs/Tampa.html" class="btn city-button mb-3">Tampa, FL</a>
+                <a href="HTMLs/VirginiaBeach.html" class="btn city-button mb-3">Virginia Beach, VA</a>
+                <a href="HTMLs/Wichita.html" class="btn city-button">Wichita, KS</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        // Initialize Leaflet map
+        var map = L.map('map').setView([37.0902, -95.7129], 4); // Set initial center and zoom level
+        // Add a tile layer for the map background (you can choose a different tile layer)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        
+        // Set the position of the transparent square with buttons
+        document.getElementById('city-buttons').style.top = (map.getSize().y * 0.2) + 'px';
+        document.getElementById('city-buttons').style.left = (map.getSize().x * 0.2) + 'px';
+    </script>
+</body>
+</html>
