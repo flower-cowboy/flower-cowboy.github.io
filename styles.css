@@ -1,8 +1,10 @@
 
 #heading {
     background-color: #2a3c30;
-    font-family: Luminari;
+}
 
+body {
+    font-family: Arial, sans-serif;
 }
 
 #ml {
@@ -15,26 +17,21 @@
     padding-right: 0%;
 }
 
+.email-link {
+    color: #f0ebe7; /* Change this to your preferred color */
+}
+
+.email-link:hover {
+    color: #647471; /* Color on hover */
+}
+
 #img {
     width: 90%;
 }
 
-#title {
-    font-family: Luminari;
-}
-
-#subtitle {
-   font-family: Palatino;
-}
-
-#txt {
-    font-family: Palatino;
- }
-
 #lnk {
     color: #2a3c30;
     background-color: #f0ebe7;
-    font-family: Palatino;
 }
 
 #project {
@@ -52,18 +49,15 @@
 #nav {
     color: #f0ebe7;
     background-color: #647471;
-    font-family: Luminari;
 }
 #nava {
     background-color: #f0ebe7;
     color: #647471;
-    font-family: Luminari;
 }
 
 #btn {
     color: #f0ebe7;
     background-color: #2a3c30;
-    font-family: Palatino;
 }
 
 #blurb {
