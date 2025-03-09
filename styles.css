@@ -36,6 +36,13 @@
     background-color: #f0ebe7;
     font-family: Palatino;
 }
+
+#project {
+    color: #f0ebe7;
+    background-color: #647471;
+    
+
+}
 #ln {
     color: #2a3c30;
     background-color: #f0ebe7;
@@ -62,6 +69,14 @@
 #blurb {
     color: #f0ebe7;
     background-color: #647471;
+}
+
+#blurb2 {
+    color: #414649;
+    background-color: #f0ebe7;
+    border: 2px solid #3B5444; /* Choose the color and thickness of the border */
+    padding: 20px; /* Optional, adds spacing inside the border */
+    border-radius: 10px; /* Optional, adds rounded corners */
 }
 
 #blurt {
@@ -110,3 +125,15 @@
     color: #f0ebe7;
     background-color: #414649;
 }
+
+.card:hover {
+    color: #f0ebe7;
+    background-color: #647471;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .carousel-item img {
+    max-height: 100%; /* Set the max height */
+    object-fit: cover; /* Ensures the image crops instead of stretching */
+    width: 100%; /* Ensure the width is responsive */
+  }
