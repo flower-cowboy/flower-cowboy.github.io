@@ -9,78 +9,234 @@
   </head>
   <body>
 
-        <!--My Nav Bar-->
-        <nav class="navbar navbar-expand-sm pb-0 m-0" id="nav">
-          <div class="container-fluid justify-content-center">
-            <ul class="navbar-nav">
-             <li class="nav-item">
-                <a class="nav-link disabled" href="index.html">Back</a>
-              </li>
-                <h3 class="nav-item">Robin Rose Martin</h3>
-  
-              <li class="nav-item">
-                <a class="nav-link disabled" href="index.html">Home</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <!--End Nav-->
-
     <div class="container-fluid p-3 text-white text-center" id="heading">
-      <img src="img/Welcome.png" class="img-fluid" >
-      <h1 id="txt">Welcome to my Portfolio:</h1>
+      <img src="img/Welcome.png" class="img-fluid pb-2" >
+      <h6 id="txt">Robin Martin | UC Davis | <a href="mailto:obimartin@ucdavis.edu" class="email-link">obimartin@ucdavis.edu</a> | (209) 568-8568</h6>
     </div>
 
     <div class="container-fluid p-5 text-center" id="blurb">
-      <p class="lead">I am Robin Rose Martin, a passionate computer scientist devoted to Human-Centered Design. My mission is to develop cutting-edge tools that improve the human experience. With a blend of technical expertise and a love for art, I integrate innovation and creativity to ensure that my solutions cater to the diverse needs of all users.
+      <p class="lead">My name is Robin Rose Martin, and I am a PhD student at UC Davis researching human-robot collaboration. My focus is on improving natural interactions between humans and robots using gestures, tone, and other communication cues. I aim to make robots more intuitive and adaptable for real-world applications like companion robots, healthcare, and assistive technology.
       </p>
 
   </div>
-    <div class="container-fluid p-3 pb-5 text-center" id="lnk">
-      <div class="row">     
-      <p class="pb-2">Follow a link to select a portfolio</p>
-       </div>
-       <div class="row">
-        <div class="col">
 
+  <!--Start Group-->
+    <div class="container-fluid p-3 pb-5" id="lnk">
+      <h1>Papers</h1>
+      <br/>
+      <div class="card mb-2" data-bs-toggle="modal" data-bs-target="#PABTModal">
+        <div class="card-body">
+          <h5 class="card-title">Mission Planning in Robotic Systems, the PA-BT</h5>
+          <p class="card-text">Robin Martin - Technical Report 2023</p>
         </div>
-        <div class="col">
-          <a href="CSlist.html" class="btn btn-lg" id="btn">Computer Science</a>
+      </div>
+
+          <!-- Modal -->
+    <div class="modal fade" id="PABTModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="PABT.pdf" width="100%" height="100%""></iframe>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
-        <div class="col">
-
-        </div>
-        <div class="col">
-
-   
-        <a href="art.html" class="btn btn-lg" id="btn">Art and More</a>
-
-        </div>
-        <div class="col">
-
-        </div>
-
       </div>
     </div>
 
+      <div class="card" data-bs-toggle="modal" data-bs-target="#GoogleModal">
+        <div class="card-body">
+          <h5 class="card-title">Adding a Temporal Vector to Google's Quick, Draw!</h5>
+          <p class="card-text">Brandon Pardi, Prasannadatta Kawadkar, Robin Martin - Exploratory Study 2024</p>
+        </div>
+      </div>
+
+          <!-- Modal -->
+    <div class="modal fade" id="GoogleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="quickdraw.pdf" width="100%" height="100%""></iframe>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </div>
+
+      <!--End Group-->
+
+        <!--Start project Group-->
+    <div class="container-fluid p-3 pb-5" id="project">
+      <h1>Projects</h1>
+      <br/>
+                       <!--Broadband-->
+    <div class="container-fluid mb-2" id="blurb2"> 
+      <div class="row">
+          <div class="col">
+          
+              <img src="img/ISP.png" class="img-fluid" >
+
+          </div>
+          <div class="col">
+            <h3 id="subtitle">Internet Affordability</h3>
+            <p><i> University of California, Santa Barbara</i></p>
+            <h5 id="subtitle">Objective:</h5>
+            <p>
+              Develop an interactive tool to visualize disparities in broadband plans offered by major United States Internet Service Providers</p>
+            
+            <p> </p>
+            <h5 id="subtitle">Method:</h5>
+            <p>A Machine Learning algorithm was used to scan and collect pricing data across various addresses in 27 U.S. cities. The dataset was pre-processed by removing specific address information to ensure privacy, replacing it with geographic coordinates while maintaining location accuracy. 
+            </p>
+
+            <p>
+              In each city, between one and three service providers, including Frontier, Spectrum, and AT&T, were analyzed to provide comparative pricing insights.
+              The interactive heat map enables users to explore broadband pricing disparities, offering valuable insights into the relationship between pricing, city location, and service provider.</p>
+              <a href="ISP-UCSB/Entry.html" class="btn" id="blurb" target="_blank">Explore the Heat Map</a>
+
+            </div>
+      </div>
+  </div>
+  <!--End Broadband-->
+
+            <!--UC Davis-->
+            <div class="container-fluid mb-2" id="blurb2"> 
+              <div class="row">
+                  <div class="col">
+                    <h3 id="subtitle">Children's Storybook Illustrator</h3>
+                    <p><i> University of California, Davis.</i></p>
+                    <h5 id="subtitle">Objective:</h5>
+                    <p>“With the rapid advancement of technology, it is important to use its power in ways that benefit society. HackDavis challenges its participants to create for social good and create an opportunity for us to explore the intersection between technology and society.”  (https://hackdavis.io/)<i> University of California, Davis.</i></p>
+                    <p> </p>
+                    <h5 id="subtitle">Method:</h5>
+                    <p>For this project my team developed an interactive website that utilizes a machine learning algorithm to generate images for children’s short stories. Our personal goal was to provide K-12 students with a tool that encouraged learning and sparked creativity, ultimately enhancing their educational experience.</p>
+                    <p></p>
+                    <p> </p>
+                    
+      
+                  </div>
+                  <div class="col">
+                    <img src="img/d1.png" class="img-fluid" >
+                    <img src="img/d2.png" class="img-fluid" >
+                  </div>
+              </div>
+          </div>
+          <!--End Davis-->
+      
+
+                  <!--Virtual Walking Simulator-->
+    <div class="container-fluid mb-2" id="blurb2"> 
+      <div class="row">
+          <div class="col">
+          
+              <img src="img/beach.png" class="img-fluid" >
+
+          </div>
+          <div class="col">
+            <h3 id="subtitle">Virtual Reality Walking Simulator</h3>
+            <p><i> University of California, Santa Barbara.</i></p>
+            <h5 id="subtitle">Objective:</h5>
+            <p>
+              Develop a virtual walking simulator customized for individuals with limited mobility, offering immersive experiences designed to enhance accessibility and foster empowerment and inclusion.</p>
+            
+            <p> </p>
+            <h5 id="subtitle">Method:</h5>
+            <p>While at UC Santa Barbara, I was involved in a research project at the Human-AI Integration Lab (HAL), which focused on developing a virtual walking simulator.</p>
+            <p>In this role, I honed my skills in Unity and Meta's Oculus to develop immersive virtual environments. </p>
+            <p>Feedback from our lead student researcher, who is paraplegic, was utilized to evaluate the comfort of using virtual tools for individuals new to walking experiences.</p>
+            <p></p>
+          </div>
+      </div>
+  </div>
+  <!--End Virtual-->
+
+      <!--UC Merced-->
+      <div class="container-fluid mb-2" id="blurb2"> 
+        <div class="row">
+            <div class="col">
+                <h3 id="subtitle">Drone Path Planning</h3>
+                <p><i> University of California, Merced.</i></p>
+                <h5 id="subtitle">Objective:</h5>
+                <p>Automate the process of piloting a drone through an obstacle course. </p>
+                <p> </p>
+                <h5 id="subtitle">Method:</h5>
+                <p>We were separated into teams of four with revolving roles. The "Controller" was responsible for plotting a course through the obstacle course using a controller, while another team member was tasked with retrieving the drone if it fell. The third position, "Manager," involved facilitating communication among team members. The final position was "Programmer," which I initially filled. We only had a brief time in each position, but my contributions laid the groundwork for our team's success.</p>
+                <p> To begin, I outlined potential functions we would require, such as "flying through hoops" and "landing." From there, my team seamlessly fleshed out the functionalities. It was rewarding to learn that our careful code organization was recognized as the key to our victory at the award ceremony.</p>
+            </div>
+            <div class="col">
+                <img src="img/merced.png" class="img-fluid" >
+            </div>
+        </div>
+    </div>
+    <!--End Merced-->
+
+                  <!--California Wildfires-->
+                  <div class="container-fluid mb-2" id="blurb2"> 
+                    <div class="row">
+                        <div class="col">
+                          <img src="img/fires.png" class="img-fluid" ></div>
+                        <div class="col">
+                           
+                            <h3 id="subtitle">California Wildfires</h3>
+                            <p><i> California State University, Stanislaus.</i></p>
+                            <h5 id="subtitle">Objective:</h5>
+                            <p>Develop machine learning algorithms to identify fuel sources on the ground using aerial and satellite imagery to create better models of wildfires and track their atmospheric effects in California.</p>
+                           <p></p>
+                                <h5 id="subtitle">Method:</h5>
+                            <p>
+                                Using QGIS (Quantum Geographic Information System), a team of physics and computer science majors tagged fuel sources, including dry/wet grass, dead/live trees, houses, and non-burnable items like roads, rocks, and dirt. Since the team had already developed a MLP, my main role was to enhance the code's readability and accuracy.</p>
+                     
+                        </div>
+                    </div>
+                </div>
+                <!--End California-->
 
 
-    <div class="container-fluid p-5 text-center" id="highlights">
-      <h4 id="txt">
-        <b>
-          Highlights
-        </b>
-      </h4>
-      <div class="row pt-5" id="items">
-        <div class="col">Full Stack Development</div>
-        <div class="col">Machine Learning</div>
-        <div class="col">Data Visualization</div>
+
       </div>
-      <div class="row pt-5" id="items">
-        <div class="col">Human Centered Design</div>
-        <div class="col">Team Leader</div>
-        <div class="col">Research</div>
-      </div>
+
+      <!--End Project Group-->
+  
+
+
+
+    <div class="container-fluid p-5" id="highlights">
+      <h1> Art</h1>
+      <br/>
+      <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/art/art7.PNG" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/art/art10.PNG" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/art/art6.PNG" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
     </div>
 
     
