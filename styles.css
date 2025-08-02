@@ -131,3 +131,58 @@ body {
     object-fit: cover; /* Ensures the image crops instead of stretching */
     width: 100%; /* Ensure the width is responsive */
   }
+
+
+
+@media (max-width: 768px) {
+.modal-fullscreen {
+    margin: 0;
+    max-width: none;
+    height: 100vh;
+}
+
+.modal-fullscreen .modal-content {
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+}
+
+.modal-fullscreen .modal-body {
+    padding: 0;
+    height: calc(100vh - 120px); /* Account for header and footer */
+    overflow: auto;
+}
+
+.modal-fullscreen .modal-header {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-fullscreen .modal-footer {
+    padding: 10px 15px;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Better mobile PDF viewing */
+.modal-fullscreen iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+}
+}
+
+/* Ensure modal backdrop works properly on mobile */
+.modal-backdrop {
+z-index: 1040;
+}
+
+.modal {
+z-index: 1050;
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+overflow: hidden;
+position: fixed;
+width: 100%;
+}
