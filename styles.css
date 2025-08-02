@@ -1,12 +1,31 @@
-
-#heading {
-    background-color: #2a3c30;
-}
-
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
 }
 
+/* Color Scheme Variables (for reference)
+Primary Dark: #2a3c30
+Secondary: #647471  
+Light: #f0ebe7
+Border/Accent: #3B5444
+Dark Gray: #414649
+Text Dark: #414649
+*/
+
+/* Header Styles */
+#heading {
+    background-color: #2a3c30;
+}
+
+.email-link {
+    color: #f0ebe7;
+}
+
+.email-link:hover {
+    color: #647471;
+}
+
+/* Layout Utilities */
 #ml {
     margin-left: 0%;
     padding-left: 0%;
@@ -17,18 +36,11 @@ body {
     padding-right: 0%;
 }
 
-.email-link {
-    color: #f0ebe7; /* Change this to your preferred color */
-}
-
-.email-link:hover {
-    color: #647471; /* Color on hover */
-}
-
 #img {
     width: 90%;
 }
 
+/* Section Backgrounds */
 #lnk {
     color: #2a3c30;
     background-color: #f0ebe7;
@@ -37,19 +49,18 @@ body {
 #project {
     color: #f0ebe7;
     background-color: #647471;
-    
-
 }
+
 #ln {
     color: #2a3c30;
     background-color: #f0ebe7;
-    
 }
 
 #nav {
     color: #f0ebe7;
     background-color: #647471;
 }
+
 #nava {
     background-color: #f0ebe7;
     color: #647471;
@@ -68,20 +79,20 @@ body {
 #blurb2 {
     color: #414649;
     background-color: #f0ebe7;
-    border: 2px solid #3B5444; /* Choose the color and thickness of the border */
-    padding: 20px; /* Optional, adds spacing inside the border */
-    border-radius: 10px; /* Optional, adds rounded corners */
+    border: 2px solid #3B5444;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 #blurt {
     color: #f0ebe7;
     background-color: #3B5444;
-   
 }
 
-#textlight{
+#textlight {
     color: #647471;
 }
+
 #highlights {
     color: #f0ebe7;
     background-color: #414649;
@@ -106,7 +117,6 @@ body {
     background-color: #2a3c30;
     text-align: center;
     color: #f0ebe7;
-
 }
 
 #CSbutton {
@@ -120,69 +130,26 @@ body {
     background-color: #414649;
 }
 
+/* Card Styles */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
 .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     color: #f0ebe7;
     background-color: #647471;
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .carousel-item img {
-    max-height: 100%; /* Set the max height */
-    object-fit: cover; /* Ensures the image crops instead of stretching */
-    width: 100%; /* Ensure the width is responsive */
-  }
-
-
-
-@media (max-width: 768px) {
-.modal-fullscreen {
-    margin: 0;
-    max-width: none;
-    height: 100vh;
 }
 
-.modal-fullscreen .modal-content {
-    height: 100vh;
-    border: none;
-    border-radius: 0;
+/* Link Styles */
+a.text-decoration-none:hover {
+    text-decoration: none !important;
 }
 
-.modal-fullscreen .modal-body {
-    padding: 0;
-    height: calc(100vh - 120px); /* Account for header and footer */
-    overflow: auto;
-}
-
-.modal-fullscreen .modal-header {
-    padding: 10px 15px;
-    border-bottom: 1px solid #dee2e6;
-}
-
-.modal-fullscreen .modal-footer {
-    padding: 10px 15px;
-    border-top: 1px solid #dee2e6;
-}
-
-/* Better mobile PDF viewing */
-.modal-fullscreen iframe {
-    width: 100% !important;
-    height: 100% !important;
-    border: none;
-}
-}
-
-/* Ensure modal backdrop works properly on mobile */
-.modal-backdrop {
-z-index: 1040;
-}
-
-.modal {
-z-index: 1050;
-}
-
-/* Prevent body scroll when modal is open */
-body.modal-open {
-overflow: hidden;
-position: fixed;
-width: 100%;
+/* Carousel Styles */
+.carousel-item img {
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
