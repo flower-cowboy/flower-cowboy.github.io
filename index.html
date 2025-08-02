@@ -6,6 +6,7 @@
     <title>Robin's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+
   </head>
   <body>
 
@@ -23,19 +24,25 @@
     <div class="container-fluid p-3 pb-5" id="lnk">
       <h1>Papers</h1>
       <br/>
-      <div class="card mb-2" data-bs-toggle="modal" data-bs-target="#PABTModal">
-        <div class="card-body">
-          <h5 class="card-title">Mission Planning in Robotic Systems, the PA-BT</h5>
-          <p class="card-text">Robin Martin - Technical Report 2023</p>
+      <a href="PABT.pdf" target="_blank" class="text-decoration-none">
+        <div class="card mb-2">
+          <div class="card-body">
+            <h5 class="card-title">Mission Planning in Robotic Systems, the PA-BT</h5>
+            <p class="card-text">Robin Martin - Technical Report 2023</p>
+            <small class="text-muted">Click to open PDF</small>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <div class="card" data-bs-toggle="modal" data-bs-target="#GoogleModal">
-        <div class="card-body">
-          <h5 class="card-title">Adding a Temporal Vector to Google's Quick, Draw!</h5>
-          <p class="card-text">Brandon Pardi, Prasannadatta Kawadkar, Robin Martin - Exploratory Study 2024</p>
+      <a href="quickdraw.pdf" target="_blank" class="text-decoration-none">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Adding a Temporal Vector to Google's Quick, Draw!</h5>
+            <p class="card-text">Brandon Pardi, Prasannadatta Kawadkar, Robin Martin - Exploratory Study 2024</p>
+            <small class="text-muted">Click to open PDF</small>
+          </div>
         </div>
-      </div>
+      </a>
 
     </div>
     <!--End Group-->
@@ -186,68 +193,8 @@
 </div>
     </div>
 
-    <!-- Modals moved to bottom of body for better mobile support -->
-    <!-- Modal for PABT -->
-    <div class="modal fade" id="PABTModal" tabindex="-1" aria-labelledby="PABTModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="PABTModalLabel">Mission Planning in Robotic Systems, the PA-BT</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-0">
-            <iframe src="PABT.pdf" width="100%" height="100%" frameborder="0"></iframe>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <a href="PABT.pdf" target="_blank" class="btn btn-primary">Open in New Tab</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Modal for Google -->
-    <div class="modal fade" id="GoogleModal" tabindex="-1" aria-labelledby="GoogleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="GoogleModalLabel">Adding a Temporal Vector to Google's Quick, Draw!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-0">
-            <iframe src="quickdraw.pdf" width="100%" height="100%" frameborder="0"></iframe>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <a href="quickdraw.pdf" target="_blank" class="btn btn-primary">Open in New Tab</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-    <script>
-      // Additional mobile support for modals
-      document.addEventListener('DOMContentLoaded', function() {
-        const modals = document.querySelectorAll('.modal');
-        
-        modals.forEach(modal => {
-          modal.addEventListener('shown.bs.modal', function() {
-            // Prevent body scroll on mobile when modal is open
-            document.body.classList.add('modal-open');
-            document.body.style.position = 'fixed';
-            document.body.style.width = '100%';
-          });
-          
-          modal.addEventListener('hidden.bs.modal', function() {
-            // Restore body scroll when modal is closed
-            document.body.classList.remove('modal-open');
-            document.body.style.position = '';
-            document.body.style.width = '';
-          });
-        });
-      });
-    </script>
   </body>
 </html>
